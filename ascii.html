@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="style.css"/>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<meta name="robots" content="noindex, nofollow">
+<title>merlin.sh</title>
+<meta name="description" content="Personal website for merlin.sh">
+</head>
+<body>
+<center>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+                                                                 .                                                      .                
+                                                               .n                   .                 .                  n.              
+                                                         .   .dP                  dP                   9b                 9b.    .       
+                                                        4    qXb         .       dX                     Xb       .        dXp     t      
+                                                       dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb     
+                                                       9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP     
+                                                        9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP      
+                                                         `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'       
+                                                  ..    .  `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'         
+                                            x .d88"    @88>    ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~  .uef^"     
+   ..    .     :                  .u    .    5888R     %8P      u.    u.       )b.  .dbo.dP'`v'`9b.odb.  .dX(         .   .k :d88E       
+ .888: x888  x888.       .u     .d88B :@8c   '888R      .     x@88k u@88c.   ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.      .@8Ned8" `888E       
+~`8888~'888X`?888f`   ud8888.  ="8888f8888r   888R    .@88u  ^"8888""8888"  dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb   .@^%8888"   888E .z8k  
+  X888  888X '888>  :888'8888.   4888>'88"    888R   ''888E`   8888  888R  dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb  x88:  `)8b.  888E~?888L
+  X888  888X '888>  d888 '88%"   4888> '      888R     888E    8888  888R  9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP 8888N=*8888  888E  888E 
+  X888  888X '888>  8888.+"      4888>        888R     888E    8888  888R   `'      9XXXXXX(   )XXXXXXP      `'   %8"    R88  888E  888E 
+  X888  888X '888>  8888L       .d888L .+     888R     888E    8888  888R            XXXX X.`v'.X XXXX             @8Wou 9%   888E  888E 
+ "*88%""*88" '888!` '8888c. .+  ^"8888*"     .888B .   888&   "*88*" 8888"           XP^X'`b   d'`X^XX           .888888P`    888E  888E 
+   `~    "    `"`    "88888%       "Y"       ^*888%    R888"    ""   'Y"             X. 9  `   '  P )X           `   ^"F     m888N= 888> 
+                       "YP'                    "%       ""                           `b  `       '  d'                        `Y"   888  
+                                                                                      `             '                              J88"  
+                                                                                                                                   @%    
+                                                                                                                                  :"      
+</pre>
+<a href="/" style="font-size: 14px;" target="_self">home</a> <a href="/blog.html" style="font-size: 14px;" target="_self">blog</a> <a href="/contact.html" style="font-size: 14px;" target="_self">contact</a> <a href="/about.html" style="font-size: 14px;" target="_self">about</a>
+<br>
+<a href="/rss.xml" style="font-size: 14px;" target="_blank">rss</a> <a href="https://x.com/merlindotsh" style="font-size: 14px;" target="_blank">x</a> <a href="https://github.com/merlin-sh" style="font-size: 14px;" target="_blank">git</a>
+<br><br>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+          .                                                      .           
+        .n                   .                 .                  n.         
+  .   .dP                  dP                   9b                 9b.    .  
+ 4    qXb         .       dX                     Xb       .        dXp     t 
+dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
+9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
+ 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP 
+  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'  
+    `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'    
+        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~        
+                        )b.  .dbo.dP'`v'`9b.odb.  .dX(                       
+                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.                      
+                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb                     
+                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb                    
+                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP                    
+                     `'      9XXXXXX(   )XXXXXXP      `'                     
+                              XXXX X.`v'.X XXXX                              
+                              XP^X'`b   d'`X^XX                              
+                              X. 9  `   '  P )X                              
+                              `b  `       '  d'                              
+                               `             '                                
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+                          ...----....                        
+                    ..-:"''         ''"-..                   
+                 .-'                      '-.                
+               .'              .     .       '.              
+             .'   .          .    .      .    .''.           
+           .'  .    .       .   .   .     .   . ..:.         
+         .' .   . .  .       .   .   ..  .   . ....::.       
+        ..   .   .      .  .    .     .  ..  . ....:IA.      
+       .:  .   .    .    .  .  .    .. .  .. .. ....:IA.     
+      .: .   .   ..   .    .     . . .. . ... ....:.:VHA.    
+      '..  .  .. .   .       .  . .. . .. . .....:.::IHHB.   
+     .:. .  . .  . .   .  .  . . . ...:.:... .......:HIHMM.  
+    .:.... .   . ."::"'.. .   .  . .:.:.:II;,. .. ..:IHIMMA  
+    ':.:..  ..::IHHHHHI::. . .  ...:.::::.,,,. . ....VIMMHM  
+   .:::I. .AHHHHHHHHHHAI::. .:...,:IIHHHHHHMMMHHL:. . VMMMM  
+  .:.:V.:IVHHHHHHHMHMHHH::..:" .:HIHHHHHHHHHHHHHMHHA. .VMMM. 
+  :..V.:IVHHHHHMMHHHHHHHB... . .:VPHHMHHHMMHHHHHHHHHAI.:VMMI 
+  ::V..:VIHHHHHHMMMHHHHHH. .   .I":IIMHHMMHHHHHHHHHHHAPI:WMM 
+  ::". .:.HHHHHHHHMMHHHHHI.  . .:..I:MHMMHHHHHHHHHMHV:':H:WM 
+  :: . :.::IIHHHHHHMMHHHHV  .ABA.:.:IMHMHMMMHMHHHHV:'. .IHWW 
+  '.  ..:..:.:IHHHHHMMHV" .AVMHMA.:.'VHMMMMHHHHHV:' .  :IHWV 
+   :.  .:...:".:.:TPP"   .AVMMHMMA.:. "VMMHHHP.:... .. :IVAI 
+  .:.   '... .:"'   .   ..HMMMHMMMA::. ."VHHI:::....  .:IHW' 
+  ...  .  . ..:IIPPIH: ..HMMMI.MMMV:I:.  .:ILLH:.. ...:I:IM  
+: .   .'"' .:.V". .. .  :HMMM:IMMMI::I. ..:HHIIPPHI::'.P:HM. 
+:.  .  .  .. ..:.. .    :AMMM IMMMM..:...:IV":T::I::.".:IHIMA
+'V:.. .. . .. .  .  .   'VMMV..VMMV :....:V:.:..:....::IHHHMH
+  "IHH:.II:.. .:. .  . . . " :HB"" . . ..PI:.::.:::..:IHHMMV"
+   :IP""HHII:.  .  .    . . .'V:. . . ..:IH:.:.::IHIHHMMMMM" 
+   :V:. VIMA:I..  .     .  . .. . .  .:.I:I:..:IHHHHMMHHMMM  
+   :"VI:.VWMA::. .:      .   .. .:. ..:.I::.:IVHHHMMMHMMMMI  
+   :."VIIHHMMA:.  .   .   .:  .:.. . .:.II:I:AMMMMMMHMMMMMI  
+   :..VIHIHMMMI...::.,:.,:!"I:!"I!"I!"V:AI:VAMMMMMMHMMMMMM'  
+   ':.:HIHIMHHA:"!!"I.:AXXXVVXXXXXXXA:."HPHIMMMMHHMHMMMMMV   
+     V:H:I:MA:W'I :AXXXIXII:IIIISSSSSSXXA.I.VMMMHMHMMMMMM    
+       'I::IVA ASSSSXSSSSBBSBMBSSSSSSBBMMMBS.VVMMHIMM'"'     
+        I:: VPAIMSSSSSSSSSBSSSMMBSSSBBMMMMXXI:MMHIMMI        
+       .I::. "H:XIIXBBMMMMMMMMMMMMMMMMMBXIXXMMPHIIMM'        
+       :::I.  ':XSSXXIIIIXSSBMBSSXXXIIIXXSMMAMI:.IMM         
+       :::I:.  .VSSSSSISISISSSBII:ISSSSBMMB:MI:..:MM         
+       ::.I:.  ':"SSSSSSSISISSXIIXSSSSBMMB:AHI:..MMM.        
+       ::.I:. . ..:"BBSSSSSSSSSSSSBBBMMMB:AHHI::.HMMI        
+       :..::.  . ..::":BBBBBSSBBBMMMB:MMMMHHII::IHHMI        
+       ':.I:... ....:IHHHHHMMMMMMMMMMMMMMMHHIIIIHMMV"        
+         "V:. ..:...:.IHHHMMMMMMMMMMMMMMMMHHHMHHMHP'         
+          ':. .:::.:.::III::IHHHHMMMMMHMHMMHHHHM"            
+            "::....::.:::..:..::IIIIIHHHHMMMHHMV"            
+              "::.::.. .. .  ...:::IIHHMMMMHMV"              
+                "V::... . .I::IHHMMV"'                       
+                  '"VHVHHHAHHHHMMV:"'                         
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+                                   .                                                      .                      
+                                 .n                   .                 .                  n.                    
+                           .   .dP                  dP                   9b                 9b.    .             
+                          4    qXb         .       dX                     Xb       .        dXp     t            
+                         dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb           
+                         9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP           
+                          9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP            
+                           `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'             
+                             `9XXXXXXXXXXXP' `9XX'          `98v8P'          `XXP' `9XXXXXXXXXXXP'               
+                                 ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~                   
+                                                 )b.  .dbo.dP'`v'`9b.odb.  .dX(   x .d88"    @88>                
+   ..    .     :                  .u    .      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.   5888R     %8P      u.    u.   
+ .888: x888  x888.       .u     .d88B :@8c    dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb  '888R      .     x@88k u@88c. 
+~`8888~'888X`?888f`   ud8888.  ="8888f8888r  dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb  888R    .@88u  ^"8888""8888" 
+  X888  888X '888>  :888'8888.   4888>'88"   9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP  888R   ''888E`   8888  888R  
+  X888  888X '888>  d888 '88%"   4888> '      `'      9XXXXXX(   )XXXXXXP      `'   888R     888E    8888  888R  
+  X888  888X '888>  8888.+"      4888>                 XXXX X.`v'.X XXXX            888R     888E    8888  888R  
+  X888  888X '888>  8888L       .d888L .+              XP^X'`b   d'`X^XX            888R     888E    8888  888R  
+ "*88%""*88" '888!` '8888c. .+  ^"8888*"               X. 9  `   '  P )X           .888B .   888&   "*88*" 8888" 
+   `~    "    `"`    "88888%       "Y"                 `b  `       '  d'           ^*888%    R888"    ""   'Y"   
+                       "YP'                             `             '               "%       ""                 
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+                                                  ..    .                            .x+=:.               
+                                            x .d88"    @88>                         z`    ^%    .uef^"    
+   ..    .     :                  .u    .    5888R     %8P      u.    u.               .   .k :d88E       
+ .888: x888  x888.       .u     .d88B :@8c   '888R      .     x@88k u@88c.           .@8Ned8" `888E       
+~`8888~'888X`?888f`   ud8888.  ="8888f8888r   888R    .@88u  ^"8888""8888"         .@^%8888"   888E .z8k  
+  X888  888X '888>  :888'8888.   4888>'88"    888R   ''888E`   8888  888R         x88:  `)8b.  888E~?888L 
+  X888  888X '888>  d888 '88%"   4888> '      888R     888E    8888  888R         8888N=*8888  888E  888E 
+  X888  888X '888>  8888.+"      4888>        888R     888E    8888  888R          %8"    R88  888E  888E 
+  X888  888X '888>  8888L       .d888L .+     888R     888E    8888  888R     .     @8Wou 9%   888E  888E 
+ "*88%""*88" '888!` '8888c. .+  ^"8888*"     .888B .   888&   "*88*" 8888"  .@8c  .888888P`    888E  888E 
+   `~    "    `"`    "88888%       "Y"       ^*888%    R888"    ""   'Y"   '%888" `   ^"F     m888N= 888> 
+                       "YP'                    "%       ""                   ^*                `Y"   888  
+                                                                                                    J88"  
+                                                                                                    @%    
+                                                                                                  :"       
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+ .S_SsS_S.     sSSs   .S_sSSs    S.       .S   .S_sSSs    
+.SS~S*S~SS.   d%%SP  .SS~YS%%b   SS.     .SS  .SS~YS%%b   
+S%S `Y' S%S  d%S'    S%S   `S%b  S%S     S%S  S%S   `S%b  
+S%S     S%S  S%S     S%S    S%S  S%S     S%S  S%S    S%S  
+S%S     S%S  S&S     S%S    d*S  S&S     S&S  S%S    S&S  
+S&S     S&S  S&S_Ss  S&S   .S*S  S&S     S&S  S&S    S&S  
+S&S     S&S  S&S~SP  S&S_sdSSS   S&S     S&S  S&S    S&S  
+S&S     S&S  S&S     S&S~YSY%b   S&S     S&S  S&S    S&S  
+S*S     S*S  S*b     S*S   `S%b  S*b     S*S  S*S    S*S  
+S*S     S*S  S*S.    S*S    S%S  S*S.    S*S  S*S    S*S  
+S*S     S*S   SSSbs  S*S    S&S   SSSbs  S*S  S*S    S*S  
+SSS     S*S    YSSP  S*S    SSS    YSSP  S*S  S*S    SSS  
+        SP           SP                  SP   SP          
+        Y            Y                   Y    Y           
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+   ▄▄▄▄███▄▄▄▄      ▄████████    ▄████████  ▄█        ▄█  ███▄▄▄▄   
+ ▄██▀▀▀███▀▀▀██▄   ███    ███   ███    ███ ███       ███  ███▀▀▀██▄ 
+ ███   ███   ███   ███    █▀    ███    ███ ███       ███▌ ███   ███ 
+ ███   ███   ███  ▄███▄▄▄      ▄███▄▄▄▄██▀ ███       ███▌ ███   ███ 
+ ███   ███   ███ ▀▀███▀▀▀     ▀▀███▀▀▀▀▀   ███       ███▌ ███   ███ 
+ ███   ███   ███   ███    █▄  ▀███████████ ███       ███  ███   ███ 
+ ███   ███   ███   ███    ███   ███    ███ ███▌    ▄ ███  ███   ███ 
+  ▀█   ███   █▀    ██████████   ███    ███ █████▄▄██ █▀    ▀█   █▀  
+                                ███    ███ ▀                        
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+                _________________                                             
+               /                /|                                            
+              /                / |                                            
+             /________________/ /|                                            
+          ###|      ____      |//|                                            
+         #   |     /   /|     |/.|                                            
+        #  __|___ /   /.|     |  |_______________                             
+       #  /      /   //||     |  /              /|                  ___       
+      #  /      /___// ||     | /              / |                 / \ \      
+      # /______/!   || ||_____|/              /  |                /   \ \     
+      #| . . .  !   || ||                    /  _________________/     \ \    
+      #|  . .   !   || //      ________     /  /\________________  {   /  }   
+      /|   .    !   ||//~~~~~~/   0000/    /  / / ______________  {   /  /    
+     / |        !   |'/      /9  0000/    /  / / /             / {   /  /     
+    / #\________!___|/      /9  0000/    /  / / /_____________/___  /  /      
+   / #     /_____\/        /9  0000/    /  / / /_  /\_____________\/  /       
+  / #                      ``^^^^^^    /   \ \ . ./ / ____________   /        
+ +=#==================================/     \ \ ./ / /.  .  .  \ /  /         
+ |#                                   |      \ \/ / /___________/  /          
+ #                                    |_______\__/________________/           
+ |                                    |               |  |  / /               
+ |                                    |               |  | / /                
+ |                                    |       ________|  |/ /________         
+ |                                    |      /_______/    \_________/\        
+ |                                    |     /        /  /           \ )       
+ |                                    |    /OO^^^^^^/  / /^^^^^^^^^OO\)       
+ |                                    |            /  / /                     
+ |                                    |           /  / /                      
+ |                                    |          /___\/                       
+ |                                    |           oo                          
+ |____________________________________|                                       
+
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+                       .,,uod8B8bou,,.                             
+              ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.                    
+         ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||                   
+         !...:!TVBBBRPFT||||||||||!!^^""'   ||||                   
+         !.......:!?|||||!!^^""'            ||||                   
+         !.........||||                     ||||                   
+         !.........||||  ##                 ||||                   
+         !.........||||                     ||||                   
+         !.........||||                     ||||                   
+         !.........||||                     ||||                   
+         !.........||||                     ||||                   
+         `.........||||                    ,||||                   
+          .;.......||||               _.-!!|||||                   
+   .,uodWBBBBb.....||||       _.-!!|||||||||!:'                    
+!YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....               
+!..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.             
+!....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.           
+!......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.         
+!........YBBBBBBBBBBRPFT?!::::::::::^''...::::::;         iBBbo.   
+`..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo. 
+  `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
+    `........::::::::::::::::;iof688888888888888888888b.     `     
+      `......:::::::::;iof688888888888888888888888888888b.         
+        `....:::;iof688888888888888888888888888888888899fT!        
+          `..::!8888888888888888888888888888888899fT|!^"'          
+            `' !!988888888888888888888888899fT|!^"'                
+                `!!8888888888888888899fT|!^"'                      
+                  `!988888888899fT|!^"'                            
+                    `!9899fT|!^"'                                  
+                      `!^"'                                        
+
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+             ________________________________________________              
+            /                                                \             
+           |    _________________________________________     |            
+           |   |                                         |    |            
+           |   | C:\> <span style="color: green;">ping</span> <span style="text-decoration: underline;">merlin.sh</span>                     |    |            
+           |   | PING merlin.sh(127.0.0.1):56 data bytes |    |            
+           |   | Request timeout for icmp_seq 0          |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |                                         |    |            
+           |   |_________________________________________|    |            
+           |                                                  |            
+            \_________________________________________________/            
+                   \___________________________________/                   
+                ___________________________________________                
+             _-'    .-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.  --- `-_             
+          _-'.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.--.  .-.-.`-_          
+       _-'.-.-.-. .---.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-`__`. .-.-.-.`-_       
+    _-'.-.-.-.-. .-----.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-----. .-.-.-.-.`-_    
+ _-'.-.-.-.-.-. .---.-. .-------------------------. .-.---. .---.-.-.-.`-_ 
+:-------------------------------------------------------------------------:
+`---._.-------------------------------------------------------------._.---'
+
+</pre>
+<pre style="font-size: 12px; font-family: 'Courier New', Courier, monospace;">
+                          _____                          
+                   _.+sd$$$$$$$$$bs+._                   
+               .+d$$$$$$$$$$$$$$$$$$$$$b+.               
+            .sd$$$$$$$P^*^T$$$P^*"*^T$$$$$bs.            
+          .s$$$$$$$$P*     `*' _._  `T$$$$$$$s.          
+        .s$$$$$$$$$P          ` :$;   T$$$$$$$$s.        
+       s$$$$$$$$$$;  db..+s.   `**'    T$$$$$$$$$s       
+     .$$$$$$$$$$$$'  `T$P*'             T$$$$$$$$$$.     
+    .$$$$$$$$$$$$P                       T$$$$$$$$$$.    
+   .$$$$$$$$$$$$$b                       `$$$$$$$$$$$.   
+  :$$$$$$$$$$$$$$$.                       T$$$$$$$$$$$;  
+  $$$$$$$$$P^*' :$$b.                     d$$$$$$$$$$$$  
+ :$$$$$$$P'      T$$$$bs._               :P'`*^T$$$$$$$; 
+ $$$$$$$P         `*T$$$$$b              '      `T$$$$$$ 
+:$$$$$$$b            `*T$$$s                      :$$$$$;
+:$$$$$$$$b.                                        $$$$$;
+$$$$$$$$$$$b.                                     :$$$$$$
+$$$$$$$$$$$$$bs.                                 .$$$$$$$
+$$$$$$$$$$$$$$$$$bs.                           .d$$$$$$$$
+:$$$$$$$$$$$$$P*"*T$$bs,._                  .sd$$$$$$$$$;
+:$$$$$$$$$$$$P     TP^**T$bss++.._____..++sd$$$$$$$$$$$$;
+ $$$$$$$$$$$$b           `T$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ 
+ :$$$$$$$$$$$$b.           `*T$$P^*"*"*^^*T$$$$$$$$$$$$; 
+  $$$b       `T$b+                        :$$$$$$$BUG$$  
+  :$P'         `"'               ,._.     ;$$$$$$$$$$$;  
+   \                            `*TP*     d$$P*******$   
+    \                                    :$$P'      /    
+     \                                  :dP'       /     
+      `.                               d$P       .'      
+        `.                             `'      .'        
+          `-.                               .-'          
+             `-.                         .-'             
+                `*+-._             _.-+*'                
+                      `"*-------*"'                       
+
+</pre>
+<pre style="font-size: 8px; font-family: 'Courier New', Courier, monospace;">
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                                                                                      
+                                                                                            NKKXN                                                     
+                                                                                      X00OOkkdoddxkkk0KXN                                             
+                                                                                   X0OkddxxodkkOOOOkkxxxxk0N                                          
+                                                                                 Kkdddddddccx0XXXXXXXKKOdoldOKN                                       
+                                                                          NXXK000OkOO0000OkxxkO00KKKXXK0OxolcldON                                     
+                                                                   NNKOxxkkxkkO0KKKXXNK00OkkkOOOkkkkkkOOOkdc:;;cxK                                    
+                                                               N0kdodoolodxxxxxxxxdxkOO0KXK0Okxkkkkdoloxkkko:,',;lkX                                  
+                                                            X0kxddxkOOkkkkkkxxxxxxdolclloxO0K0kkxxxxxdooddxxxoc;,,:xX                                 
+                                                         NKOkkOOOOOOOOOkkkkxxkkkxxxxdollccccoxkOOkkxddoooollodoc:;;lkX                                
+                                                        0xxkOOOOOOOOOOOOkkxxxkkxxxxxxdddollcc:clodxkkxolllll::cl:,;:oON                               
+                                                      XkkO00OOOOOOOOO0OOkkxxxxxxxxxxdddddoooll::::cldxxoc::c:,:do,,;cxK                               
+                                                    X0kkOO00000OOOOOOOOkkkkkxxddxxxxdddddddddoc;;;,,;:ldoc:;,,;ox:',,ckX                              
+                                                  NKOkOOOOOOOOOOOOOOOOkkkkkkkxxxxxxxddddddddddl:;;,,''';clcc;,,lxl;'',dX                              
+                                                  0xkOOOOOOOOOOOOkkkOkkxkkxxxxxxxxxxdddddddddoll:;,,,'''',;::;,okxc,',l0                              
+                                                 KOkOOkkOOOOOOOOkkkOOkdoodddxxxxxxxddddodddooc;,,;;,,,,,,'',;;:dOko;',:dK                             
+                                                XkkkxxkkkkkOOOOOkkkkkxocllooodddddxxxdl:clool:,'',,,,,,,,,,,,,:dOko;',;ck                             
+                                                OooxkO0KKK000Okkkkkkdolllcccccllccodxo;,;;:c:,''..'',,',,',,'',oOko;',;:ok0X                          
+                                               XdlkKXXXXXXXXXK0Okxxxddooodoc:;;:::::ll,....'','''..'',,','',,',okxo;'';:cclkN                         
+                                               klkXXXXXXXXXXXKKK00Okdoolldxdl;,,,;,,;;,''.''',,',,,'''',,,,,''.ckko;,',:::lkKX                        
+                                              XxkKXXXXXXXXXKKKKKKK00Oxolcclol;''',,,,,,,''..',,,,,,''''''','''.;dko;,,,:::xX00N                       
+                                             Nkx0KKXXXXXXKKKKKKKKK000Okxdl::;,,'.......'''''..',,,'','''''''''.,oOd;,,';c:lOkkX                       
+                                             XxxOOOO0XXXXK00000OO0000OOOkxool:;,''.........'.....''',,',,,,'''.'lkd:;,';c::x0X                        
+                                             Nxcoxxxx0XXK0OkkxxxxkkOOOOOkkxddl:,,,,''................''',,',''..:kxc:,',lllk0X                        
+                                              kcokd::d0XKOkddxddxkkkkkkOkkxxdl:;,'''','...'''........'''''','...;kxlc,',colloxKN                      
+                                              0dOKo,,lOXKkdddddxO0Odlllodxddoc;;;,,''',,'''...........''''''....,xkoo;',:ol;'ck0N                     
+                                             NOkOOkxdkKX0xdodxxOKNKl..,;;cclc:;;;;,,''',,,,'....'.......'''......dkdo;'':ll:':dkK                     
+                                             N0KK0OOOKXXOdoodkO0KK0o;;;,,::cc::::;;,,,''',,''....................lOxdc,';clc,,cd0                     
+                                             NKKXKKKKXX0kdoodk00OOOkdlcccodxxdooc:;;,,,,''',''....'''............lOxxk:',cl:;,:o0N                    
+                                             X0KKKKKKK0kddoodk00OOOOkxxxkkkkkxdol:;,,,,,,,'''''''..''''..........cOxxOl',cl:,':oON                    
+                                             XO0KKKKK0kdollodkO0000000OOOOkkkxolc:;,,,,,,,,''''',''''............;kkdko,':l:,';lkX                    
+                                             XO0KKKK0kdollclokO0000000OOOkxxxdlc:;,,,,,,,,,,'''..',,'............,xkxOd,';ol,',cxX                    
+                                             XO0KKKKkdllcccccdOO00000OOOkkxddoc:;,,,,,,,,,,,,'...''''............,dkxOd;';dd;'':d0N                   
+                                              KOKKKOoc::::c:;cxO00OOOOkkxddool:;,,,;;;,,,;,,,'',,'''.............'okxkx:,;dOl'.;lkK                   
+                                              Kk0KKK0dc;;;;::cdOOOOOOkkxddoolc:;,,,;;;;,,,,,,,;;,'................lkxkx:,;dKx;'':dOK                  
+                                              XxxKKKKKOolllodxxkOOOkkkxxdoolc::;;;;;;;;;,,,,,,,,'.................o0O0kc;;dX0l'',lxOX                 
+                                               0xO0kkOkdodddxxxkkkkkxxddoolcc:::;;;;;;;;,,'''''...................dKKKkl;;oKXx,',:ox0N                
+                                               Nkk0klcclllllooddxxxxxdoollccc::::::::;;;;,'''''...................dKKKOl:;l0X0c'';cokK                
+                                                KodOxollllc:::codxxxdoollccccccccccc:::;;;,;;;''..................l0KKOoc:cOXKd,',:loOX               
+                                                NkdkOOkkxlccccodxxxxdollllcccccccccccc:;;;;oOo;,..................lKKK0dlc:kKKO;',;clokX              
+                                                 XOk00Okdllccloodxxdoolllllllcclllllc:;;,;;oxo;'''................c000Oxdl:xKXKc',;cl:lON             
+                                                   0OKXK0kxdooooodddoolllllllllllllc:;;;;;;;:cc:;'....'''',,,'''..;kOkkxxo:o0XXd'',;ll;cO             
+                                                   XkkKK00Okxdooooooolllllllolllcc:;;;;;;;;;;:::;:cllooddooolc:;;,;dkkOkkklckXXx;',;cl:;kN            
+                                                    X0Okkkkkxdolllllllccccccccc::::::::;::clodkkO0000Okxxxdooc:;;,,okxkkx0xcoKXO:',;;cc;dX            
+                                                       X0OxdollloxkkxololccccccccclddxkOOKXXNNNNXXKOkolc::;;;;,,,',d0kkkxOkclOXKl'',;:c:lK            
+                                                          NXXKKXNXK  XkxkxdddodxO0XNWWWWWWWNXK0kdl:;,,',',,,',,,,''lOOkOkkkocxKXx,.,;;cc:k            
+                                                                      NOxOOO0KXNWWWWWWNX0Oxol:;,,,''''''''''''''''.;xkkOOxxo:oOXO:.';:cl:oX           
+                                                                       OdOXNNNNWWWWNXOxoc:;;;;,,,,''''''''''.'''...,dkxO0xddccx00l'.,cclcc0           
+                                                                      X0KNWWNN NXKOxdooll:;;;;,,'''''''''''..''....'lOkk0kdkdcok0d,.,cllc;dKN         
+                                                                     XXNWWWNNKOkxxxxxdolc:;;;;,'''''''''''...''.....:kkO0Oxkklcokx;.':lcol:o0N        
+                                                                   NXNWWWXOkkxxxxxxxxddoc:;;;,,''..'''''...'''''....;x00K0xk0d::dx:'';c:cdl;c0        
+                                                                  NKX NKOxxxxkkkkxxxdoolc:;,,,''..........'''''''...,d00K0kk0kc:odc,,;c:cxxc:dN       
+                                                                  NXNXOddxxxxkkxxxxddlcc:;;,,,'...........'''...''..'o00K0OkOkl:oxo;,:lodO0d:oK       
+                                                                 XO0Odoodxxxxxxxxxxddlcc::;,,''''.......''''''.''...'l0000OkOkl:dko:;:dO0KKkccO       
+                                                                 Oodddddxxxxxxxxxxxdddolc;;,'''''...'...'''''''......cO000Okkkocoxdc::oO0KKOocxN      
+                                                               Nkoodxdddxkxxxxxxxddddoooc:;,'''''''''''.'''''........cO000OkOkdclxxoc;lO0000dloK      
+                                                               Oloddxxddxxddddddddddddddol:,''''''''....''.''........;xkkkOO0Oxlcdkxl;:x0000xlo0      
+                                                              0dlodxxxdooodddoddxxxxxxxdddo;,,,',''''....''''........:dkkkk0K0xl:okkd;;oO000klc0      
+                                                            NOoloooddollooddddxxxxxkkxxxxxo:,,,,,;,,,,''..'''........:dkkkkO00kl:cdxo::lkOOkxoxX      
+                                                            Olllooooolloodddddxxkxxxxxxxxdoc;,,,,;;;;;,''''''........:oxxxdxkOko;,lOK0OO0KXXXN        
+                                                           0ollooooooodddddddxxdxxdddddxddol:,,,,;;;;;,,,,,,''.......;odddddxkxl;':0                  
+                                                          Nxclooooodddddddxxxxxxddddddddddooc:;,,;;,,,,,,,,,','......:oooodddxxc;,:O                  
+                                                          Xdcooddddddxxxxxxxxxxddddddddodddool:;;,,,,,,,',,',,,'''...;lllloolooclx0N                  
+                                                          Xdcoddddxxxxxxkkxxxddooooooodooodoolc:;;,'',,,,,,',,,,,,''.:xkkkkO00KKN                     
+                                                         N0ooddddxxkkkkkkkxxxooooooooooooooooolc:;;,,''',,',,',,,,,,',l0                              
+                                                         Kdoddddxxkkkkkkkkxxdoolllllloooollooolc:;;,,,'''''''',,',,,'''c0                             
+                                                       N0oodddddxkkkkkkkkxddoolllllllllllllllooc:;,'''''''''''',,,'''',,:ON                           
+                                                       0ooxdddddxkkkkkxxxxdoolllllllllllllcclllc:;,'''''''''','',,,''',,,:kX                          
+                                                      Kddxdddddxxdoooooddooollllcccccllccccclllc:;''''.',,,,,,'',;,''',,,';xN                         
+                                                     Xxoddddddxkdcccccloooollllccccccccccccllllc:;'''''',,,,,,'',;;,.',,,'';k                         
+                                                    Kdddddddxxkxo::cccclooolllccccccccc::cllllllc;,''.'',,,,,''',;;,'.','',';k                        
+                                                   Kdoxddddxkkkxl:::ccclooooollccccccc::clooooll:;,,''''',,,'''',;;;,''''',,'cK                       
+                                                  0ooxddddxxkkkdl::::cllooooollcccc:c:::llooooll:;;,''''''''''',;;;;;,'''',,':O                       
+                                                 Xdodddddxkkkkxdlc:::cloooooollc:::::::cllooooll:;,,'''''''''',,;;;;;,'''',,,c0                       
+                                                Xkddddddxxkkkxxolc:;::loooooollc::::::::cloooolc:;,,''''''''''',;;;;;,'''''';dX                       
+                                               Nkddddddxxkkkxxdolc:;;:coooooolc:::::::::cllllllc:;,,,'''...''''''''''''''''':kN                       
+                                               0ddooddxxkkkxddoolc::;;:looooolc:::::::::cllllllc::;,,'''''.''''.''...''''''',oK                       
+                                              Xxddddddxkkxxxddoolc::;;;clooollc::::::::::cclllcc:;;,''..''..'''''''...''''.',cO                       
+                                             Kxddddddxxkxxxdddoolc::;;;:clllllcc::::;;:::clllcc:;;;,'.......'''''.......'''',c0                       
+                                            0dooooddxxxxxddoooollc::;;;;:cllllcc:::::;;:clllcc:;;,,''....''................',ckN                      
+                                           Xdloooooddxxxdolllllcc:;;;,,,;ccccccc:::::::::cccc::;;,,'.......................',ckN                      
+
+</pre>
+</center>
+</body>
+</html> 
