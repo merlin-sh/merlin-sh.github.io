@@ -1,0 +1,22 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    
+    padding: 10px;
+    margin: auto;
+}
+a {
+    color: #888;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
+}
